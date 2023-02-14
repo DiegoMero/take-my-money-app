@@ -71,5 +71,8 @@ group :test do
   gem "webdrivers"
 end
 
-#Rubocop
+# Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+# Devise
+gem 'devise'
