@@ -3,12 +3,15 @@ class GroupsController < ApplicationController
     @groups = current_user.groups
   end
 
+  def show
+  end
+
   def new
     @group = Group.new
   end
 
   def create
-    @group = Group.new(form_params.merge(user: current_user, icon: 'Icon not available yet'))
+    @group = Group.new(form_params.merge(user: current_user))
 
     if @group.save
       redirect_to groups_url
@@ -16,10 +19,10 @@ class GroupsController < ApplicationController
       render :new
     end
   end
-
+  
   private
 
   def form_params
-    params.require(:group).permit(:name)
+    params.require(:group).permit(:name, :icon)
   end
 end
