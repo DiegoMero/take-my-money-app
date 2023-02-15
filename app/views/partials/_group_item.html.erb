@@ -1,0 +1,6 @@
+<li class='group-item'>
+  <div><%= group.icon %></div>
+  <h3><%= group.name %></h3>
+  <% @total_amount = Action.joins(:action_groups).where(action_groups: { group_id: group.id }).sum(:amount) %>
+  <h3>$<%= @total_amount %></h3>
+</li>

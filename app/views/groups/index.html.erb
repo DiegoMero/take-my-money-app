@@ -1,0 +1,9 @@
+<h1>Categories</h1>
+<ul class='group-list'>
+  <% @groups.each do |group| %>
+    <%= link_to '/groups' do %>
+      <%= render 'partials/group_item', group: group %>
+    <% end %>
+  <% end %>
+</ul>
+<%= link_to "Add new category", '/groups/new', class: 'add-new-category-button' %>
