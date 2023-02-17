@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   resources :groups do
-    resources :actions
+    resources :investments
   end
 end

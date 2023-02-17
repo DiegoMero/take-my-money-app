@@ -1,7 +1,8 @@
 <%= render 'partials/group_item', group: @group %>
 <ul>
-  <% @group.actions.each do |action| %>
-    <li><%= action.name %></li> 
+  <% @sorted_investments = @group.investments.sort_by { |t| t.created_at }.reverse %>
+  <% @sorted_investments.each do |investment| %>
+    <li><%= investment.name %></li> 
   <% end %>
 </ul>
-<%= link_to "Add new transaction", "/groups/#{@group.id}/actions/new", class: 'add-new-transaction-button' %>
+<%= link_to "Add new transaction", "/groups/#{@group.id}/investments/new", class: 'add-new-transaction-button' %>
