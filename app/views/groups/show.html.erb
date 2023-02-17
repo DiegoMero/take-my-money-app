@@ -1,0 +1,7 @@
+<%= render 'partials/group_item', group: @group %>
+<ul>
+  <% @group.actions.each do |action| %>
+    <li><%= action.name %></li> 
+  <% end %>
+</ul>
+<%= link_to "Add new transaction", "/groups/#{@group.id}/actions/new", class: 'add-new-transaction-button' %>

@@ -1,4 +1,4 @@
 class Action < ApplicationRecord
-  has_many :action_groups
+  has_and_belongs_to_many :groups
   belongs_to :user
 end

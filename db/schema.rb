@@ -10,18 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_14_052716) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_17_012605) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "action_groups", force: :cascade do |t|
-    t.bigint "action_id", null: false
-    t.bigint "group_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["action_id"], name: "index_action_groups_on_action_id"
-    t.index ["group_id"], name: "index_action_groups_on_group_id"
-  end
 
   create_table "actions", force: :cascade do |t|
     t.string "name"
@@ -30,6 +21,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_14_052716) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_actions_on_user_id"
+  end
+
+  create_table "actions_groups", id: false, force: :cascade do |t|
+    t.bigint "group_id", null: false
+    t.bigint "action_id", null: false
+    t.index ["action_id", "group_id"], name: "index_actions_groups_on_action_id_and_group_id"
+    t.index ["group_id", "action_id"], name: "index_actions_groups_on_group_id_and_action_id"
   end
 
   create_table "groups", force: :cascade do |t|
@@ -54,8 +52,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_14_052716) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "action_groups", "actions"
-  add_foreign_key "action_groups", "groups"
   add_foreign_key "actions", "users"
   add_foreign_key "groups", "users"
 end

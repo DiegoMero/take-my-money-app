@@ -1,7 +1,7 @@
 <h1>Categories</h1>
 <ul class='group-list'>
   <% @groups.each do |group| %>
-    <%= link_to '/groups' do %>
+    <%= link_to "/groups/#{group.id}" do %>
       <%= render 'partials/group_item', group: group %>
     <% end %>
   <% end %>
