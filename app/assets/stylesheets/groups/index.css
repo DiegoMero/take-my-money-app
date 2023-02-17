@@ -21,6 +21,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  list-style: none;
 }
 
 .group-item {

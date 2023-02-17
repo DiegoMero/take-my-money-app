@@ -1,11 +1,13 @@
-<div class='invesments-header'>
-  <h2 class='back-button'><%= link_to "<", '/groups' %></h2>
-  <%= render 'partials/group_item', group: @group %>
-</div>
-<ul>
-  <% @sorted_investments = @group.investments.sort_by { |t| t.created_at }.reverse %>
-  <% @sorted_investments.each do |investment| %>
-    <li><%= investment.name %></li> 
-  <% end %>
-</ul>
-<%= link_to "Add new transaction", "/groups/#{@group.id}/investments/new", class: 'add-new-transaction-button' %>
+<body class='investments-section'>
+  <div class='investments-header'>
+    <%= link_to "<", '/groups' %>
+    <%= render 'partials/group_item', group: @group %>
+  </div>
+  <ul class='investments-list'>
+    <% @sorted_investments = @group.investments.sort_by { |t| t.created_at }.reverse %>
+    <% @sorted_investments.each do |investment| %>
+      <li><%= investment.name %></li> 
+    <% end %>
+  </ul>
+  <h2><%= link_to "Add new transaction", "/groups/#{@group.id}/investments/new" %></h2>
+</body>
