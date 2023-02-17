@@ -1,0 +1,47 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+  background-color: #F2F2F2;
+  padding-top: 35%;
+}
+
+.home-page h1 {
+  font-family: 'Anton', sans-serif;
+  color: #333333;
+  margin-bottom: 60%;
+}
+
+.home-page h2 {
+  margin: 0;
+  padding: 3%;
+}
+
+.log-in-button {
+  background-color: #3778C2;
+  width: 70%;
+  text-align: center;
+}
+
+.log-in-button a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+}
+
+.sign-up-button {
+  background-color: #F2F2F2;
+  width: 70%;
+  text-align: center;
+}
+
+.sign-up-button a {
+  color: #999999;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+}
