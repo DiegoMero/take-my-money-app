@@ -23,11 +23,20 @@
   gap: 10px;
 }
 
-.group-list a {
+.group-item {
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  width: 100%;
+}
+
+.group-item a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-decoration: none;
   color: #747070;
-  width: 100%;
   background-color: white;
+  width: 100%;
 }
 
 .group-list-section h2 {

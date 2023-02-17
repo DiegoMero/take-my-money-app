@@ -1,0 +1,8 @@
+.invesments-header {
+  display: flex;
+}
+
+.invesments-header li {
+  display: flex;
+  justify-content: space-between;
+}

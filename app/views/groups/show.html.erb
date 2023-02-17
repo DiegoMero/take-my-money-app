@@ -1,4 +1,7 @@
-<%= render 'partials/group_item', group: @group %>
+<div class='invesments-header'>
+  <h2 class='back-button'><%= link_to "<", '/groups' %></h2>
+  <%= render 'partials/group_item', group: @group %>
+</div>
 <ul>
   <% @sorted_investments = @group.investments.sort_by { |t| t.created_at }.reverse %>
   <% @sorted_investments.each do |investment| %>
