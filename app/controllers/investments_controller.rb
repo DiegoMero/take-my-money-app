@@ -2,6 +2,7 @@ class InvestmentsController < ApplicationController
   before_action :authenticate_user!
 
   def new
+    @group = Group.find(params[:group_id])
     @investment = Investment.new
   end
 

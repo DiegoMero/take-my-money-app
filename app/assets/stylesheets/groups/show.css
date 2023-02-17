@@ -33,7 +33,7 @@
 .investments-list li {
   font-family: 'Montserrat', sans-serif;
   padding: 5%;
-  color: #333333;
+  color: #333;
 }
 
 .investments-section h2 {
@@ -50,5 +50,3 @@
   color: white;
   text-decoration: none;
 }
-
-
