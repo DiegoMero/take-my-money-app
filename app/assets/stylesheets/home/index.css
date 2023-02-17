@@ -5,13 +5,13 @@
   width: 100%;
   margin: 0;
   align-items: center;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding-top: 35%;
 }
 
 .home-page h1 {
   font-family: 'Anton', sans-serif;
-  color: #333333;
+  color: #333;
   margin-bottom: 60%;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .log-in-button {
-  background-color: #3778C2;
+  background-color: #3778c2;
   width: 70%;
   text-align: center;
 }
@@ -34,13 +34,13 @@
 }
 
 .sign-up-button {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   width: 70%;
   text-align: center;
 }
 
 .sign-up-button a {
-  color: #999999;
+  color: #999;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-size: medium;

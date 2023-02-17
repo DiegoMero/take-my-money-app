@@ -1,3 +1,6 @@
 .group-item {
   display: flex;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  justify-content: space-around;
 }

@@ -1,10 +1,46 @@
 .group-list-section {
   height: 100%;
   width: 100%;
-  background-color: greenyellow;
+  background-color: #f2f2f2;
   margin: 0;
 }
 
+.group-list-section h1 {
+  font-family: 'Anton', sans-serif;
+  background-color: #3778c2;
+  color: #dee7f1;
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+}
+
 .group-list {
-  padding: 0;
+  padding: 5%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.group-list a {
+  text-decoration: none;
+  color: #747070;
+  width: 100%;
+  background-color: white;
+}
+
+.group-list-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #3778c2;
+  width: 70%;
+  text-align: center;
+  font-size: large;
+  padding: 3%;
+  margin-left: 12%;
+}
+
+.group-list-section h2 a {
+  color: white;
+  text-decoration: none;
 }
