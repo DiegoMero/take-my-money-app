@@ -24,7 +24,7 @@ RSpec.describe 'Groups', type: :request do
     it 'returns http success' do
       @user = User.create(name: 'David', email: 'test@example.com', password: 'password')
       sign_in @user
-      get "/groups/new"
+      get '/groups/new'
       expect(response).to have_http_status(:success)
     end
   end

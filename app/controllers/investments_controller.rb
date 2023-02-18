@@ -16,7 +16,7 @@ class InvestmentsController < ApplicationController
       render :new
     end
   end
-  
+
   private
 
   def form_params
