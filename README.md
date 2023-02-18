@@ -17,7 +17,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Blog <a name="about-project"></a>
+# 📖 Take my money <a name="about-project"></a>
 
 > This application allows you to register and log in to manage your finances, you can invest your money in the different categories available.
 ## 🛠 Built With <a name="built-with"></a>

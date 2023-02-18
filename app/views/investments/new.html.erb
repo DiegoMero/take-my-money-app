@@ -10,7 +10,8 @@
     <%= f.label :amount %><br>
     <%= f.text_field :amount %>
   </div>
-  <% current_user.groups.each do |group| %>
+  <% @groups = Group.where(author_id: current_user) %> 
+  <% @groups.each do |group| %>
     <div>
       <%= f.check_box :group_ids, { multiple: true }, group.id, nil %>
       <%= group.name %>
