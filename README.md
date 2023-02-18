@@ -56,7 +56,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.
-- [Live Demo Link](https://budget-app-service.onrender.com/)
+- [Live Demo Link](https://take-my-money-app.onrender.com/)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
