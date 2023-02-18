@@ -132,6 +132,8 @@ If you like this project feel free to support!
 
 I would like to thank all my coding partners that help me through the obstacles.
 
+- Original Design by: [Gregoire Vella](https://www.behance.net/gregoirevella)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
