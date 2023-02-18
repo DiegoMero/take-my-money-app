@@ -55,7 +55,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 - [Live Demo Link](https://take-my-money-app.onrender.com/)
 
 
