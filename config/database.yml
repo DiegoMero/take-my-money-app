@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: take_my_money_app_production
-  username: take_my_money_app
-  password: <%= ENV["TAKE_MY_MONEY_APP_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
