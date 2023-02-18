@@ -14,7 +14,7 @@ class GroupsController < ApplicationController
   end
 
   def create
-    @group = Group.new(form_params.merge(user: current_user))
+    @group = Group.new(form_params.merge(author: current_user))
 
     if @group.save
       redirect_to groups_url

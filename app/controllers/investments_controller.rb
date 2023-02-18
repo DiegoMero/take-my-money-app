@@ -7,7 +7,7 @@ class InvestmentsController < ApplicationController
   end
 
   def create
-    @investment = Investment.new(form_params.merge(user: current_user))
+    @investment = Investment.new(form_params.merge(author: current_user))
     @group = Group.find(params[:group_id])
 
     if @investment.save

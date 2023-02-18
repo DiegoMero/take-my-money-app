@@ -14,7 +14,7 @@ RSpec.describe 'Groups', type: :request do
     it 'returns http success' do
       @user = User.create(name: 'David', email: 'test@example.com', password: 'password')
       sign_in @user
-      @group = Group.create(name: 'Facebook', icon: 'Icon', user_id: @user.id)
+      @group = Group.create(name: 'Facebook', icon: 'Icon', author_id: @user.id)
       get "/groups/#{@group.id}"
       expect(response).to have_http_status(:success)
     end
