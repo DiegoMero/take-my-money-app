@@ -1,0 +1,13 @@
+<h2 class='back-button'><%= link_to "<", '/groups' %></h2>
+<h1>New Category</h1>
+<%= form_with model: @group, url: groups_path do |f| %>
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :icon %><br>
+    <%= f.text_field :icon %>
+  </div>
+  <%= f.submit "Save" %>
+<% end %>

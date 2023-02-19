@@ -1,0 +1,23 @@
+<h2 class='back-button'><%= link_to "<", "/groups/#{@group.id}" %></h2>
+<h1>New Transaction</h1>
+<%= form_with(model: @investment, url: group_investments_path) do |f| %>
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+  <% @groups = Group.where(author_id: current_user) %> 
+  <% @groups.each do |group| %>
+    <div>
+      <%= f.check_box :group_ids, { multiple: true }, group.id, nil %>
+      <%= group.name %>
+    </div>
+  <% end %>
+  <div>
+    <%= f.submit "Save" %>
+  </div>
+<% end %>
